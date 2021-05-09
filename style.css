@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    background-color: #fffbfb;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+#toggle{
+    display: none;
+}
+.navbar {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 100%;
+    overflow: auto;
+    padding: 17px;
+    z-index: 2;
+    border-bottom-width:1px;
+    border-bottom-style:solid;
+    border-bottom-color:rgb(172, 172, 172);
+}
+/* .grid-container {
+    display: grid;
+    grid-template-rows: auto auto;
+} */
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links {
+    margin-right: 15vw;
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+.navbar-links li {
+    list-style: none;
+    width: 100%;
+    padding: 1px;
+    margin-right: 2vw;
+    align-items: center;
+    align-self: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: rgb(2, 2, 2);
+    padding: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2.5vh;
+    font-weight:400;
+    font-stretch: narrower;
+    display:block;
+}
+
+.navbar-links li:hover {
+    background-color: rgb(251, 255, 255);
+    box-shadow: 0px 3px 0px rgb(185, 99, 37) ;
+}
+.navbar-links li a:hover{
+    font-size: 2.5vh;
+    color: rgb(7, 48, 161);
+} 
+nav ul li a:hover:after {
+    z-index: -10;
+    animation: fill 1s forwards;
+    -webkit-animation: fill 1s forwards;
+    -moz-animation: fill 1s forwards;
+    opacity: 1;
+  }
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30px;
+    height: 21px;
+    color: rgb(151, 44, 44);
+}
+.logo{
+    margin-right: 8vw;
+}
+.bar {
+    /* height: 3px;
+    width: 100%; */
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    /* position: absolute; */
+}
+.gridcontainer1{
+    display: flex;
+}
+
+
+
+
+p {
+    font-family: Helvetica, sans-serif;
+    font-size: large;
+    font-weight: 200;
+    color: rgb(0, 0, 0);
+}
+h1 {
+    font-family: Sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    background-color: rgb(245, 245, 245);
+    padding: 4px;
+    color: rgb(5, 0, 70);
+}
+
+.footer {
+    
+    background-color: rgb(240, 240, 240);
+    margin: 0 auto;
+    padding: 70px 15px; 
+    color: rgb(21, 21, 58);
+    border-width:2px;
+    border-style:solid;
+    border-color:rgb(217, 219, 224);
+  }
+
+  
+  .logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    height: 50px;
+    opacity: 1;
+    position: relative;
+    left: 12px;
+    /* margin-right: 20px;
+    margin-top: 15px;    if you want it vertically middle of the navbar. */
+}
+.box1{
+    display: flex;
+    /* justify-items: center; */
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.1em;
+}
+
+
+.container1{
+    margin: auto 3vw;
+    margin-left: 15vw;
+}
+.container2{
+  margin: auto 3vw;
+  margin-bottom: 3.2vh;
+  margin-top: 3.5vh;
+}
+.container4{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  margin: auto 3vw;
+  margin-left: 2vw;
+  margin-bottom: 6vh ;
+}
+
+ .copy{
+     font-size: 1em;
+    margin-right: 10vw;
+    margin-left: 12vw;
+    margin-top: 3vh;
+} 
+
+#logo1{
+    margin-left: 13vw;
+    margin-right: 3vw;
+}
+.a{
+    padding: 10px;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+}
+.text-center{
+    margin-bottom: 3vh;
+}
+
+@media (max-width: 500px) {
+    .toggle-button {
+        display: flex;
+        justify-content: stretch;
+    }
+
+    .navbar-links {
+       display: none;
+     
+    }
+    
+    .navbar {
+        flex-direction: column;
+        align-items: center; 
+        /* width: 50%; */
+        position: relative;
+    }
+
+    .navbar-links ul {
+        flex-direction: column ;
+      
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+       
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem; 
+        
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+    #toggle{
+        display: block;
+    }
+}
