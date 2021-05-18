@@ -51,5 +51,5 @@ var index = 0;
         x[index - 1].style.display = "block";
 
         //set loop to change image every 3000 milliseconds (3 seconds)
-        setTimeout(change, 2000);
+        setTimeout(change, 4000);
     }
